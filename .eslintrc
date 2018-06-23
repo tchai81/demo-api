@@ -1,0 +1,19 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["standard"],
+    "env": {
+        "jest": true,
+        "jasmine": true
+    },
+    "rules": {
+        "space-before-function-paren": 0,
+        "indent": 0,
+        "no-tabs": 0,
+        "no-mixed-spaces-and-tabs": 0,
+        "no-undef": 1,
+        "no-new": 1,
+        "eol-last": 1,
+        "space-unary-ops": 0,
+        "comma-dangle": ["error", "never"]
+    }
+}
