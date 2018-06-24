@@ -4,15 +4,17 @@ var fs = require('fs')
 var path = require('path')
 var Sequelize = require('sequelize')
 var basename = path.basename(__filename)
-var env = process.env.NODE_ENV || 'development'
-var config = require(__dirname + '/../config/config.json')[env]
 var db = {}
 
-if (config.use_env_variable) {
-    var sequelize = new Sequelize(process.env[config.use_env_variable], config)
-} else {
-    var sequelize = new Sequelize(config.database, config.username, config.password, config)
-}
+var sequelize = new Sequelize({
+    database: process.env.SQL_DATABASE,
+    username: process.env.SQL_USERNAME,
+    password: process.env.SQL_PASSWORD,
+    host: process.env.SQL_HOST,
+    dialect: process.env.SQL_DIALECT,
+    timezone: process.env.SQL_TIMEZONE,
+    port: process.env.SQL_PORT
+})
 
 fs.readdirSync(__dirname)
     .filter(file => {

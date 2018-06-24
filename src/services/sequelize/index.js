@@ -1,13 +1,13 @@
 import Sequelize from 'sequelize'
 
 const sequelize = new Sequelize({
-    database: 'demo-api',
-    username: 'homestead',
-    password: 'secret',
-    host: '127.0.0.1',
-    dialect: 'mysql',
-    timezone: 'utc',
-    port: '33060'
+    database: process.env.SQL_DATABASE,
+    username: process.env.SQL_USERNAME,
+    password: process.env.SQL_PASSWORD,
+    host: process.env.SQL_HOST,
+    dialect: process.env.SQL_DIALECT,
+    timezone: process.env.SQL_TIMEZONE,
+    port: process.env.SQL_PORT
 })
 
 export default sequelize
