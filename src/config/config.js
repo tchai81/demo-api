@@ -1,3 +1,7 @@
+/**
+ * This file is required for sequelize-cli
+ */
+
 var path = require('path')
 var dotenv = require('dotenv-safe')
 dotenv.load({

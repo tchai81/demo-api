@@ -55,5 +55,5 @@ describe('get object', () => {
 })
 
 describe('create or update object', () => {
-    // pending
+    // pending implementation
 })
