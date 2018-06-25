@@ -1,7 +1,10 @@
 import moment from 'moment'
 
+/**
+ * Format object instance
+ */
 const transformObject = (object, showTimestamp = true) => {
-    if (object && object['versions'].length) {
+    if (object && object['versions'] && object['versions'].length > 0) {
         let formatted = {
             key: object['key'],
             value: object['versions'][0]['value']
@@ -15,6 +18,9 @@ const transformObject = (object, showTimestamp = true) => {
     return null
 }
 
+/**
+ * Format version instance
+ */
 const transformVersion = (object, version) => {
     if (object && version) {
         return {
