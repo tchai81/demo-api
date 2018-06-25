@@ -34,6 +34,7 @@
         "jest-cli": "^20.0.4",
         "mongodb-memory-server": "^1.7.3",
         "nock": "^9.0.2",
+        "node-mocks-http": "^1.7.0",
         "nodemon": "^1.10.2",
         "opn-cli": "^3.1.0",
         "sequelize-cli": "^4.0.0",
