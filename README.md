@@ -1,4 +1,4 @@
-# demo-api
+# Framework
 
 ```
 Prototype build based on https://github.com/diegohaz/rest
