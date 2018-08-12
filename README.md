@@ -6,26 +6,6 @@ Database: MySQL
 ORM - http://docs.sequelizejs.com/
 ```
 
-# Live demo
-
-Get latest value based on key
-
-```bash
-GET http://18.222.123.196:8080/object/key
-```
-
-Get latest value based on key with timestamp
-
-```bash
-GET http://18.222.123.196:8080/object/key?timestamp=1529922501
-```
-
-Create/update a key
-
-```bash
-POST http://18.222.123.196:8080/object/key
-```
-
 ## Getting Started
 
 1.  git clone https://github.com/tchai81/demo-api.git <folder-name>
